@@ -1,15 +1,15 @@
-"""helpers.py has some amazing functions etc."""
 
-def ultimate_answer(question):
-    """Provides an answer to the ultimate question.
+""" Complete each of the sorts! """
 
-    Returns '42' if the question is 'What is the meaning of Life, The Universe,
-    Everything?' otherwise returns 'That is not much of a question'
-    
-    args:
-        question (str): The question to be answered.
-        
-    returns:
-        str
-    """
-    return None
+def bubble_sort(words):
+    '''Write your code here!'''
+    pass
+
+def selection_sort(words):
+    '''Write your code here!'''
+    pass
+
+def insertion_sort(words):
+    '''Write your code here!'''
+    pass
+
