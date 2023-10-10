@@ -1,2 +1,3 @@
-# Aurora_SDD_Template
-A template repository for Aurora SDD assignments
+# Sorts
+A Gigthub based challenge - try to implement each of the sorts in python. 
+1. Create a new Branch
