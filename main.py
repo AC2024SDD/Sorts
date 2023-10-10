@@ -1,6 +1,6 @@
 """ Your challenge is to implement a bubble sort, selection sort and insertion sort below. """
 
-import helpers as h
+import helpers
 import csv
 from time import perf_counter
 #path = (r"assets/words4000.csv")
@@ -8,20 +8,6 @@ from time import perf_counter
 path = (r"assets/words50000.csv")
 word_list = []
 
-##### Complete each of the sorts! #####
-def bubble_sort(words):
-    '''Write your code here!'''
-    pass
-
-def selection_sort(words):
-    '''Write your code here!'''
-    pass
-
-def insertion_sort(words):
-    '''Write your code here!'''
-    pass
-
-##### Complete the challenge above this line #####
 
 
 def main():
