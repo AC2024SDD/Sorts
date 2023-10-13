@@ -25,6 +25,10 @@ def main():
     h.insertion_sort(word_list)
     print("Insertion sort completed in", perf_counter() - time)
 
+    time = perf_counter()
+    h.bogo_sort(word_list)
+    print("Bogo sort completed in", perf_counter() - time)
+
     
 def load_list(csv_file):
     try:
