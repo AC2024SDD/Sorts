@@ -8,7 +8,7 @@ path = (r"assets/words4000.csv")
 #path = (r"assets/words50000.csv")
 word_list = []
 
-
+# This is a comment
 
 def main():
     load_list(path)
