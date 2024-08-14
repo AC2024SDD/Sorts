@@ -22,19 +22,11 @@ def selection_sort(words):
     pass
 
 def insertion_sort(words):
-        first = 1
-    last = len(words)-1
-    PositionOfNext = last - 1
-    while PositionOfNext >= first:
-        Next = words[PositionOfNext]
-        current = PositionOfNext
-        while current < last and Next > words[current + 1]:
-            #sort them
-            current += 1
-            words[current - 1] = words[current]
-        words[current] = Next
-        #put somehting somewhere
-        PositionOfNext -= 1
-        #shorten the unsorted part
-    pass
+    for number in range(len(array)):
+        current_number = number
+        prev_num = current_number - 1
+        while current_number > 0 and words[prev_num] > words[current_number]:
+            words[current_number], words[prev_num] = words[prev_num], words[current_number]
+            current_number += -1
+            prev_num = current_number - 1
 
