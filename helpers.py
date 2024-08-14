@@ -1,18 +1,17 @@
 
-""" Complete each of the sorts! """
+import csv
 
-def bubble_sort(words):
-    '''Write your code here!'''
-    pass
+def load_list(csv_file, word_list):
+    try:
+        with open(csv_file, mode='r', newline='') as file:
+            reader = csv.reader(file)
+            # Assuming the 'Word' column is in the first position (index 0)
+            for row in reader:
+                word_list.append(row[0])    
+        print("Words loaded successfully!")
+        #print("Words List:", word_list)
+    except FileNotFoundError:
+        print(f"File '{csv_file}' not found.")
+    except Exception as e:
+        print("An error occurred:", str(e))
 
-def selection_sort(words):
-    '''Write your code here!'''
-    pass
-
-def insertion_sort(words):
-    '''Write your code here!'''
-    pass
-
-def bogo_sort(words):
-    '''Write your code here!'''
-    pass
