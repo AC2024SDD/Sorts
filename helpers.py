@@ -1,4 +1,6 @@
-def load_list(csv_file):
+import csv
+
+def load_list(csv_file, word_list):
     try:
         with open(csv_file, mode='r', newline='') as file:
             reader = csv.reader(file)
@@ -6,7 +8,7 @@ def load_list(csv_file):
             for row in reader:
                 word_list.append(row[0])    
         print("Words loaded successfully!")
-        print("Words List:", word_list)
+        #print("Words List:", word_list)
     except FileNotFoundError:
         print(f"File '{csv_file}' not found.")
     except Exception as e:

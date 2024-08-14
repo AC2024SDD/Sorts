@@ -1,8 +1,9 @@
 """ Your challenge is to implement a bubble sort, selection sort and insertion sort below. """
 
+
 import helpers as h
 import sorts as s
-import csv
+
 from time import perf_counter
 path = (r"assets/words4000.csv")
 #path = (r"assets/words10000.csv")
@@ -11,7 +12,7 @@ word_list = []
 
 
 def main():
-    h.load_list(path)
+    h.load_list(path, word_list)
     
     time = perf_counter()
     s.bubble_sort(word_list)
