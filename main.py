@@ -2,6 +2,7 @@
 
 import helpers as h
 import csv
+from sorts import *
 from time import perf_counter
 path = (r"assets/words4000.csv")
 #path = (r"assets/words10000.csv")
