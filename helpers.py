@@ -1,3 +1,4 @@
+
 import csv
 
 def load_list(csv_file, word_list):
@@ -13,3 +14,4 @@ def load_list(csv_file, word_list):
         print(f"File '{csv_file}' not found.")
     except Exception as e:
         print("An error occurred:", str(e))
+
