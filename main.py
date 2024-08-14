@@ -7,12 +7,12 @@ from time import perf_counter
 path = (r"assets/words4000.csv")
 #path = (r"assets/words10000.csv")
 #path = (r"assets/words50000.csv")
-word_list = []
+
 
 
 
 def main():
-    load_list(path)
+    word_list = load_list(path)
     
     time = perf_counter()
     h.bubble_sort(word_list)
@@ -28,6 +28,7 @@ def main():
 
     
 def load_list(csv_file):
+    word_list = []
     try:
         with open(csv_file, mode='r', newline='') as file:
             reader = csv.reader(file)
@@ -35,7 +36,7 @@ def load_list(csv_file):
             for row in reader:
                 word_list.append(row[0])    
         print("Words loaded successfully!")
-        print("Words List:", word_list)
+        return word_list
     except FileNotFoundError:
         print(f"File '{csv_file}' not found.")
     except Exception as e:
